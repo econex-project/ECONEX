@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login | Econex</title>
+    <link rel="stylesheet" href="login.css" />
+  </head>
+  <body>
+    <main class="login-container">
+      <section class="banner-container">
+        <img
+          src="../assets/images/baner_login.png"
+          alt="Sua jornada começa aqui com ECONEX"
+          class="banner-imagem"
+        />
+      </section>
+      <section class="formulario-container">
+        <div class="cabecalho-formulario">
+          <h1>Bem-vindo de volta!</h1>
+          <p>Entre para continuar sua jornada no ECONEX.</p>
+        </div>
+
+        <form action="" id="formulario-login">
+          <div class="campo-formulario">
+            <label for="email">Email</label>
+
+            <div class="input-container">
+              <i data-lucide="mail"></i>
+              <input type="email" id="email" required />
+            </div>
+          </div>
+
+          <div class="campo-formulario">
+            <label for="senha">Senha</label>
+
+            <div class="input-container">
+              <i data-lucide="lock-keyhole"></i>
+              <input type="password" id="senha" required minlength="8" />
+              <button type="button" id="mostrar-senha">
+                <i data-lucide="eye"></i>
+              </button>
+            </div>
+          </div>
+
+          <div class="botao-container">
+            <button type="submit" class="botao-cadastro">
+              Acessar minha conta
+            </button>
+          </div>
+
+          <p class="link-mudar-senha">
+            <a href="#">Esqueceu sua senha?</a>
+          </p>
+
+          <p class="link-login">
+            Não tem uma conta?
+            <a href="../cadastro/cadastro.html">Cadastre-se.</a>
+          </p>
+        </form>
+      </section>
+    </main>
+
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script>
+      lucide.createIcons();
+    </script>
+
+    <script src="login.js"></script>
+  </body>
+</html>
