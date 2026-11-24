@@ -1,0 +1,226 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Manrope", sans-serif;
+  background-color: #f2f4f8;
+}
+
+.cadastro-container {
+  display: flex;
+  width: 85%;
+  max-width: 1000px;
+  margin: auto;
+  background-color: white;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+  border-radius: 16px;
+  overflow: hidden;
+}
+
+.banner-container {
+  width: 45%;
+  display: flex;
+  align-items: stretch;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.banner-imagem {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.cabecalho-formulario {
+  text-align: center;
+  margin-bottom: 35px;
+}
+
+.cabecalho-formulario h1 {
+  font-size: 36px;
+}
+
+.cabecalho-formulario p {
+  font-size: 17px;
+}
+
+.cabecalho-formulario h1,
+.cabecalho-formulario p {
+  color: #2a5494;
+}
+
+#formulario-cadastro {
+  width: 100%;
+  max-width: 380px;
+}
+
+.formulario-container {
+  padding: 55px 45px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.campo-formulario {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  margin-bottom: 12px;
+}
+
+.campo-formulario label {
+  font-size: 14px;
+  font-weight: 600;
+  color: #2a5494;
+}
+
+.campo-formulario input {
+  width: 100%;
+  height: 38px;
+
+  padding: 8px 12px;
+
+  font-family: "Manrope", sans-serif;
+  font-size: 14px;
+
+  background-color: #f8fafc;
+  border: 1px solid #d9e0e8;
+  border-radius: 8px;
+}
+
+.botao-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 25px;
+}
+
+.botao-cadastro {
+  background-color: #ff7f3e;
+  color: #ffffff;
+
+  padding: 13px 28px;
+
+  font-family: "Manrope", sans-serif;
+  font-size: 15px;
+  font-weight: 700;
+
+  border: none;
+  border-radius: 15px;
+
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.botao-cadastro:hover {
+  background-color: #e9682c;
+}
+
+.input-container {
+  position: relative;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.input-container i {
+  position: absolute;
+  left: 14px;
+  width: 19px;
+  height: 19px;
+  color: #2a5494;
+  pointer-events: none;
+}
+
+.input-container input {
+  width: 100%;
+  height: 34px;
+  padding: 8px 12px 8px 42px;
+  background-color: #f8fafc;
+  border: 1px solid #2a5494;
+  border-radius: 8px;
+  box-sizing: border-box;
+  font-family: "Manrope", sans-serif;
+  font-size: 14px;
+}
+
+.input-container input:focus {
+  border-color: #1764d9;
+  box-shadow: 0 0 0 3px rgba(23, 100, 217, 0.12);
+  outline: none;
+}
+
+.input-container > svg {
+  position: absolute;
+  left: 14px;
+  width: 19px;
+  height: 19px;
+  color: #2a5494;
+  stroke: #2a5494;
+  pointer-events: none;
+}
+
+.input-container button svg {
+  position: static;
+  width: 18px;
+  height: 18px;
+}
+
+.input-container input[type="date"] {
+  padding-left: 35px;
+  padding-right: 12px;
+}
+
+.input-container input[type="date"]::-webkit-calendar-picker-indicator {
+  cursor: pointer;
+  filter: invert(28%) sepia(35%) saturate(1200%) hue-rotate(185deg);
+}
+
+.link-login {
+  margin-top: 15px;
+  text-align: center;
+  font-size: 13px;
+  color: #2a5494;
+}
+
+.link-login a {
+  color: #1764d9;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.link-login a:hover {
+  text-decoration: underline;
+}
+
+.input-container button {
+  position: absolute;
+  right: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+
+  background: transparent;
+  border: none;
+  cursor: pointer;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  color: #2a5494;
+  padding: 4px;
+}
+
+.input-container button svg {
+  width: 18px;
+  height: 18px;
+}
